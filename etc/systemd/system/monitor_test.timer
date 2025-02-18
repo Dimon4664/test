@@ -1,0 +1,9 @@
+[Unit]
+Description=Run monitor_test.sh every minute
+
+[Timer]
+OnCalendar=*:0/1
+Unit=monitor_test.service
+
+[Install]
+WantedBy=timers.target
